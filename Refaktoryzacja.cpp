@@ -91,24 +91,16 @@ private:
 		return Wartosc_Rabatu;
 	}
 
-	double Koszt_Realizacji_Zmaowinia() 
+	int getPodatek() 
 	{
-		
-		switch (typPodatku)
-		{
-		default: case 0: //zwykły vat
-			cenaBrutto = cenaNetto * marza * 0.22; break;
-		case 1: // vat 7%
-			cenaBrutto = cenaNetto * marza * 0.07; break;
-		case 2: // vat 11&
-			cenaBrutto = cenaNetto * marza * 0.11; break;
-		case 3: // vat 15%
-			cenaBrutto = cenaNetto * marza * 0.15; break;
-		}
+		return Podatek_Vat;
 	}
 
 public:
-
+	double Koszt_Realizacji_Zmaowinia()
+	{
+	
+	}
 };
 
 void Pierwszy_Test_Funkcji_Nalicz_Naleznosc()
