@@ -91,7 +91,7 @@ private:
 		return Wartosc_Rabatu;
 	}
 
-	double Podatek_Vat() 
+	double Koszt_Realizacji_Zmaowinia() 
 	{
 		
 		switch (typPodatku)
